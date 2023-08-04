@@ -1,5 +1,6 @@
 <?php
 require_once("valida_acesso.php");
+<<<<<<< HEAD
 echo "<br>";
 echo $_SESSION["id"];
 echo "<br>";
@@ -7,6 +8,8 @@ echo $_SESSION["controle_usuario"];
 echo "<br>";
 
 
+=======
+>>>>>>> 0dacdc9356f158ec2d4d5d5f4e0a6201a1a6d914
 ?>
 <html>
   <head>

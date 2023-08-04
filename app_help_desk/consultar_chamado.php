@@ -2,10 +2,16 @@
 require_once("valida_acesso.php");
 ?>
 
+<<<<<<< HEAD
 
 <?php 
 
 $arquivo=fopen("../../sistema/arquivo.txt", "r");
+=======
+<?php 
+
+$arquivo=fopen("arquivo.txt", "r");
+>>>>>>> 0dacdc9356f158ec2d4d5d5f4e0a6201a1a6d914
 
 $vetor=array();
   
@@ -63,6 +69,7 @@ fclose($arquivo);
 
                 $chamados_separados=explode(" ", $key);
 
+<<<<<<< HEAD
                 if($_SESSION["controle_usuario"]==2){
                   if($_SESSION["id"]!=$chamados_separados[0]){
                     continue;
@@ -84,13 +91,34 @@ fclose($arquivo);
                 </div>
               </div>
               
+=======
+                // ele vai contar arrays tem se for menor na proxima interação ele pula de linha
+                 
+              if( count($chamados_separados) < 3 ){ 
+                continue;
+                 } 
+               ?>
+              
+              <div class="card mb-3 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title"> <?php echo $chamados_separados [0] ?> </h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><?php echo $chamados_separados [1] ?></h6>
+                  <p class="card-text"><?php echo $chamados_separados [2] ?></p>
+
+                </div>
+              </div>
+>>>>>>> 0dacdc9356f158ec2d4d5d5f4e0a6201a1a6d914
               <?php
               
               } 
             ?>
               <div class="row mt-5">
                 <div class="col-6">
+<<<<<<< HEAD
                   <a class="btn btn-lg btn-warning btn-block" type="submit" href="home.php">Voltar</a>
+=======
+                  <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+>>>>>>> 0dacdc9356f158ec2d4d5d5f4e0a6201a1a6d914
                 </div>
               </div>
             </div>

@@ -1,7 +1,12 @@
 <?php
+<<<<<<< HEAD
 session_start();
 
 $arquivo=fopen("../../sistema/arquivo.txt", "a");
+=======
+
+$arquivo=fopen("arquivo.txt", "a");
+>>>>>>> 0dacdc9356f158ec2d4d5d5f4e0a6201a1a6d914
 
 $vetor=[];
 
@@ -12,6 +17,7 @@ foreach ($_POST as $key ) {
 $vetor=implode(" ", $vetor); // juntar a parti dos espaços 
 
 
+<<<<<<< HEAD
 fwrite($arquivo,$_SESSION["id"].' '.$vetor .PHP_EOL);
 fclose($arquivo);
   
@@ -19,5 +25,12 @@ fclose($arquivo);
 
 /*echo "<pre>";
 print_r($_POST);S
+=======
+fwrite($arquivo, $vetor .PHP_EOL);
+fclose($arquivo);
+
+/*echo "<pre>";
+print_r($_POST);
+>>>>>>> 0dacdc9356f158ec2d4d5d5f4e0a6201a1a6d914
 echo "<pre>";*/
 ?>
